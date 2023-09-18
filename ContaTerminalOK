@@ -1,1 +1,57 @@
-ContaTerminalOK
+
+import java.util.Locale;
+import java.util.Scanner;
+
+
+public class ContaTerminalOK {
+    public static void main(String[] args) throws Exception {
+      
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
+
+        System.out.println(" ");
+        System.out.println("======================================= ");
+        System.out.println(" ");
+        System.out.println("INFORMAÇÕES DA CONTA");
+        System.out.println(" ");
+        System.out.println("DIGITE SUAS INFORMAÇÕES COMO NO EXEMPLO ABAIXO ");
+        System.out.println(" ");
+        System.out.println("CONTA: XXXX");
+        System.out.println("AGENCIA:XXX-X ");
+        System.out.println("NOME: NOME SOBRENOME ");
+        System.out.println("SALDO: XXX.XX ");
+        System.out.println(" ");
+        System.out.println("======================================= ");
+        System.out.println(" ");
+        
+        
+
+
+        System.out.println("DIGITE O NÚMERO DA CONTA: ");
+        int numConta = scanner.nextInt();
+
+        System.out.println("DIGITE O NÚMERO DA CONTA: ");
+        String numAgencia = scanner.next();
+
+        System.out.println("DIGITE SEU NOME: ");
+        String nome = scanner.next();
+
+        System.out.println("DIGITE SEU SOBRENOME: ");
+        String sobreNome = scanner.next();
+
+
+        System.out.println("DIGITE SEU SALDO: ");
+        double saldo = scanner.nextDouble();
+
+        System.out.println(" ");
+        System.out.println("======================================= ");
+        System.out.println(" ");
+
+        System.out.println("NÚMERO DA CONTA: " + numConta);
+        System.out.println("NÚMERO DA AGENCIA: " + numAgencia);
+        System.out.println("NOME DO CLIENTE: " + nome + " " + sobreNome);
+        System.out.println("SALDO DA CONTA: R$" + saldo);
+
+
+
+    }
+}
